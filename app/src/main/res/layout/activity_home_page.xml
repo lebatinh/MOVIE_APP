@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/img"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.HomePageActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgMMovie"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:src="@drawable/view_m_movie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnBackHomePage"
+        android:layout_width="41dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/back_purple_conner"
+        android:padding="10dp"
+        android:src="@drawable/img_3"
+        app:layout_constraintBottom_toBottomOf="@+id/imgMMovie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgMMovie" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnMain"
+        android:layout_width="47dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/back_purple_conner"
+        android:padding="10dp"
+        android:src="@drawable/img_4"
+        app:layout_constraintBottom_toBottomOf="@+id/imgMMovie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgMMovie" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/rcvMovie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgMMovie"
+        tools:listitem="@layout/item_category"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rcvCategory"
+        app:spanCount="2"
+        tools:listitem="@layout/item" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

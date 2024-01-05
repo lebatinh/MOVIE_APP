@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@drawable/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".admin.SeatManagementFromUserActivity">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgMMovie"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:src="@drawable/view_m_movie"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnBackSeatSelectFromUser"
+        android:layout_width="41dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/back_purple_conner"
+        android:padding="10dp"
+        android:src="@drawable/img_3"
+        app:layout_constraintBottom_toBottomOf="@+id/imgMMovie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgMMovie" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvSeatSelectedFromUser"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgMMovie"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/item_seat_selected_from_user" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

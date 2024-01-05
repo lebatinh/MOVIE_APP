@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/viewBackSeatMainUser"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/custom_back_item_main_user"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <ImageButton
+        android:id="@+id/btnDeleteTicket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/baseline_delete_forever_24"
+        app:layout_constraintEnd_toEndOf="@id/viewBackSeatMainUser"
+        app:layout_constraintTop_toTopOf="@id/viewBackSeatMainUser"
+        app:layout_constraintBottom_toBottomOf="@id/viewBackSeatMainUser"
+        android:layout_marginEnd="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="13sp"
+        android:id="@+id/tvMovieNameMainUser"
+        android:padding="3dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#6AAA1F"
+        android:textStyle="normal|bold"
+        android:text="Movie Name: "
+        app:layout_constraintTop_toTopOf="@id/viewBackSeatMainUser"
+        app:layout_constraintStart_toStartOf="@id/viewBackSeatMainUser"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDisplayMovieNameMainUser"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold|normal"
+        android:hint="Pháp Sư Mù"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/tvMovieNameMainUser"
+        app:layout_constraintBottom_toBottomOf="@id/tvMovieNameMainUser"
+        app:layout_constraintStart_toEndOf="@id/tvMovieNameMainUser"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="13sp"
+        android:id="@+id/tvSeatNumberMainUser"
+        android:padding="3dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#6AAA1F"
+        android:textStyle="bold|normal"
+        android:text="Seat Number: "
+        app:layout_constraintStart_toStartOf="@id/viewBackSeatMainUser"
+        app:layout_constraintTop_toBottomOf="@id/tvMovieNameMainUser"
+      />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDisplaySeatNumberMainUser"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold|normal"
+        android:hint="40"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/tvSeatNumberMainUser"
+        app:layout_constraintBottom_toBottomOf="@id/tvSeatNumberMainUser"
+        app:layout_constraintStart_toEndOf="@id/tvSeatNumberMainUser"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="13sp"
+        android:id="@+id/tvShowTime"
+        android:padding="3dp"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#6AAA1F"
+        android:textStyle="normal|bold"
+        android:text="Show Time: "
+        app:layout_constraintStart_toStartOf="@id/viewBackSeatMainUser"
+        app:layout_constraintTop_toBottomOf="@id/tvSeatNumberMainUser"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDisplayShowTime"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="normal|bold"
+        android:hint="20h30p"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/tvShowTime"
+        app:layout_constraintBottom_toBottomOf="@id/tvShowTime"
+        app:layout_constraintStart_toEndOf="@id/tvShowTime"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MOVIE APP</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="login_to_my_account">Login to my account</string>
+    <string name="enter_email">Enter email</string>
+    <string name="password">Password</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="email_address">Email Address</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="phone_munber">phone munber</string>
+    <string name="nick_name">Nick Name</string>
+    <string name="total_spending">total spending:</string>
+    <string name="delete_ticket_description">delete_ticket_description</string>
+    <string name="resetting_by_month">Resetting by month</string>
+    <string name="resetting_by_day">Resetting by Day</string>
+    <string name="register_account">Register account</string>
+    <string name="email_name">Email name</string>
+</resources>
